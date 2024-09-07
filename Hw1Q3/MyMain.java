@@ -7,15 +7,15 @@ public class MyMain {
         PersonList personList = new PersonList();
         
         try {
-            // Create a FileInputStream from the data file
+            // read from data file
             FileInputStream fis = new FileInputStream("data.txt");
             personList.store(fis);
             
-            // Display all persons in the list
+            // show all the persons
             personList.display(System.out);
             
-            // Test the find method
-            String searchId = "0911"; // Replace with an appropriate ID for testing
+            // Test the find function
+            String searchId = "0911"; 
             int index = personList.find(searchId);
             if (index != -1) {
                 System.out.println("Person with ID " + searchId + " found at index " + index);
