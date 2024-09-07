@@ -1,3 +1,7 @@
+import java.io.*;
+import java.util.LinkedList;
+import java.util.Scanner;
+
 public class MyMain {
     public static void main(String[] args) {
         PersonList personList = new PersonList();
@@ -11,7 +15,7 @@ public class MyMain {
             personList.display(System.out);
             
             // Test the find method
-            String searchId = "123"; // Replace with an appropriate ID for testing
+            String searchId = "0911"; // Replace with an appropriate ID for testing
             int index = personList.find(searchId);
             if (index != -1) {
                 System.out.println("Person with ID " + searchId + " found at index " + index);
